@@ -26,5 +26,5 @@ button {
 .js-item {
 
  display: flex;
-   
+   gap: 8px;
 }

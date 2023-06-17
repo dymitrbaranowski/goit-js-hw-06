@@ -19,6 +19,6 @@ const items = images.map( ({url,alt})=> `
 src=${url} alt=${alt}>
 </li>`).join('')
 console.log(items);
- list.classList.add();
+ 
 list.insertAdjacentHTML('afterbegin', items)
 
