@@ -11,7 +11,8 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  /* display: flex; */
+
+  
 }
 
 input {
@@ -23,8 +24,10 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-.js-item {
 
- display: flex;
-   gap: 8px;
+
+.gallery {
+  display: flex;
+  gap: 8px;
+ list-style: none;
 }
