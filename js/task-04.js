@@ -1,25 +1,30 @@
-const count = document.querySelector("#counter");
-const decr = count.firstElementChild;
-const incr = count.lastElementChild;
-const spa = document.querySelector(dataset.value);
-console.log(decr);
-console.dir(count.children);
+// const count = document.querySelector("#counter");
+// const decr = count.firstElementChild;
+// const incr = count.lastElementChild;
 
-let counterValue = 0;
-decr.addEventListener('click', handlerclick)
+// const span = document.querySelector('#value');
 
-function handlerclick(evt) {
-    counterValue -= 1;
-    spa.textValue + counterValue;
-}
- 
-// // count.dataset.value = counterValue;
+// console.log(span);
+// console.dir(count.firstElementChild);
 
-// const selectors = {
-//     decr: document.querySelector(button.dataset.action)
+// let counterValue = 0;
+// decr.addEventListener('click', handlerclick)
+
+// function handlerclick(evt) {
+//     counterValue -= 1;
+//    span.textcontent = counterValue;
 // }
 
-// console.log(selectors.decr)
+
+const counterValue = document.querySelector("#value");
+const decrementBtn = document.querySelector('[data-action="decrement"]');
+const incrementBtn = document.querySelector('[data-action="increment"]');
+decrementBtn.addEventListener("click", () => {
+  counterValue.textContent -= 1;
+});
+incrementBtn.addEventListener("click", () => {
+  counterValue.textContent = Number(counterValue.textContent) + 1;
+});
 
 
 
