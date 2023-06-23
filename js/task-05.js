@@ -11,5 +11,9 @@ input.addEventListener('input', handlerQuery)
 
 function handlerQuery(evt) {
     // console.log(evt.currentTarget.value);
-    span.textContent = evt.currentTarget.value
+    span.textContent = evt.target.value
+    
+    if (evt.target.value === '') {
+        span.textContent = 'Anonymous'
+    }
 }
